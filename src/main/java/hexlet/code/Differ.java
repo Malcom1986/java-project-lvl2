@@ -8,15 +8,13 @@ import java.util.Map;
 import org.apache.commons.io.FilenameUtils;
 
 public class Differ {
-    public static String gendiff(String filepath1, String filepath2, String format) throws Exception {
+    public static String generate(String filepath1, String filepath2, String format) throws Exception {
 
         var data1 = getFileData(filepath1);
         var data2 = getFileData(filepath2);
         var diff = Tree.buildTree(data1, data2);
 
-        return diff.toString();
-
-
+        return Formatter.format(diff, format);
     }
 
     private static Map<String, Object> getFileData(String filepath) throws Exception {
@@ -25,6 +23,4 @@ public class Differ {
         var fileType = FilenameUtils.getExtension(filepath);
         return Parser.parse(content);
     }
-
-
 }
