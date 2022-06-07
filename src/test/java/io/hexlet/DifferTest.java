@@ -28,9 +28,6 @@ public class DifferTest {
                 "stylish"
         );
         assertThat(actual).isEqualTo(expectedStylish);
-
-
-
     }
 
     private static Path getFixturePath(String fileName) {

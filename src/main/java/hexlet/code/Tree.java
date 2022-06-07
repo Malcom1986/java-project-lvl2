@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.TreeSet;
 
 public class Tree {
-    public static List<Map<String, Object>> buildTree(Map<String, Object> data1, Map<String,Object> data2) {
+    public static List<Map<String, Object>> buildTree(Map<String, Object> data1, Map<String, Object> data2) {
 
         var diff = new ArrayList<Map<String, Object>>();
         var sortedKeys = new TreeSet<String>(data1.keySet());

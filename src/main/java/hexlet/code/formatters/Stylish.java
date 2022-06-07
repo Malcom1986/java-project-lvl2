@@ -23,14 +23,14 @@ public class Stylish {
                             .append(" ".repeat(indent))
                             .append("- ").append(key).append(": ")
                             .append(node.get("value"))
-                            .append("\n");;
+                            .append("\n");
                     break;
                 case "unchanged":
                     formatted
                             .append(" ".repeat(indent))
                             .append("  ").append(key).append(": ")
                             .append(node.get("value"))
-                            .append("\n");;
+                            .append("\n");
                     break;
                 case "changed":
                     formatted
@@ -41,6 +41,8 @@ public class Stylish {
                             .append(" ".repeat(indent)).append("+ ").append(key).append(": ")
                             .append(node.get("value2"))
                             .append("\n");
+                default:
+                    break;
             }
         }
         formatted.append("}");
