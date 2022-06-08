@@ -20,6 +20,10 @@ public class DifferTest {
         expectedStylish = Files.readString(getFixturePath("stylish"));
     }
 
+    private static Path getFixturePath(String fileName) {
+        return Paths.get(basePath + fileName).toAbsolutePath().normalize();
+    }
+
     @Test
     void testJsonStylish() throws Exception {
         var actual = Differ.generate(
@@ -30,9 +34,14 @@ public class DifferTest {
         assertThat(actual).isEqualTo(expectedStylish);
     }
 
-    private static Path getFixturePath(String fileName) {
-        return Paths.get(basePath + fileName).toAbsolutePath().normalize();
+    @Test
+    void testYamlStylish() throws  Exception {
+        var actual = Differ.generate(
+                basePath + "file1.yml",
+                basePath + "file2.yml",
+                "stylish"
+        );
+
+        assertThat(actual).isEqualTo(expectedStylish);
     }
-
-
 }

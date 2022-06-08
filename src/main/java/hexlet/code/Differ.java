@@ -19,7 +19,7 @@ public class Differ {
     private static Map<String, Object> getFileData(String filepath) throws Exception {
         var absolutePath = Paths.get(filepath).toAbsolutePath().normalize();
         var content = Files.readString(absolutePath);
-        var fileType = FilenameUtils.getExtension(filepath);
-        return Parser.parse(content);
+        var type = FilenameUtils.getExtension(filepath);
+        return Parser.parse(content, type);
     }
 }
