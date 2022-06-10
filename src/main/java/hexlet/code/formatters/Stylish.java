@@ -15,31 +15,31 @@ public class Stylish {
                     formatted
                             .append(" ".repeat(indent))
                             .append("+ ").append(key).append(": ")
-                            .append(node.get("value"))
+                            .append(stringify(node.get("value")))
                             .append("\n");
                     break;
                 case "deleted":
                     formatted
                             .append(" ".repeat(indent))
                             .append("- ").append(key).append(": ")
-                            .append(node.get("value"))
+                            .append(stringify(node.get("value")))
                             .append("\n");
                     break;
                 case "unchanged":
                     formatted
                             .append(" ".repeat(indent))
                             .append("  ").append(key).append(": ")
-                            .append(node.get("value"))
+                            .append(stringify(node.get("value")))
                             .append("\n");
                     break;
                 case "changed":
                     formatted
                             .append(" ".repeat(indent))
                             .append("- ").append(key).append(": ")
-                            .append(node.get("value1"))
+                            .append(stringify(node.get("value1")))
                             .append("\n")
                             .append(" ".repeat(indent)).append("+ ").append(key).append(": ")
-                            .append(node.get("value2"))
+                            .append(stringify(node.get("value2")))
                             .append("\n");
                 default:
                     break;
@@ -47,5 +47,13 @@ public class Stylish {
         }
         formatted.append("}");
         return formatted.toString();
+    }
+
+    private static String stringify(Object value) {
+        if (value == null) {
+            return "null";
+        }
+
+        return value.toString();
     }
 }
