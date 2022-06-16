@@ -9,7 +9,6 @@ import java.util.function.Function;
 
 public class Tree {
     public static List<Map<String, Object>> buildTree(Map<String, Object> data1, Map<String, Object> data2) {
-
         var diff = new ArrayList<Map<String, Object>>();
         var sortedKeys = new TreeSet<String>(data1.keySet());
         sortedKeys.addAll(data2.keySet());
