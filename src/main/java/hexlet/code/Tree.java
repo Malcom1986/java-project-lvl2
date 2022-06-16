@@ -33,11 +33,11 @@ public class Tree {
             } else {
                 node.put("type", "unchanged");
                 node.put("value", value1);
+                node.put("value", value1);
             }
 
             return node;
         };
-        System.out.println(sortedKeys.stream().map(buildNode).toList());
 
         return sortedKeys.stream().map(buildNode).toList();
     }

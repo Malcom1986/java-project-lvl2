@@ -14,12 +14,14 @@ public class DifferTest {
 
     private static String expectedStylish;
     private static String expectedPlain;
+    private static String expectedJson;
     private static String basePath = "src/test/resources/fixtures/";
 
     @BeforeAll
     static void beforeAll() throws Exception {
         expectedStylish = Files.readString(getFixturePath("stylish"));
         expectedPlain = Files.readString(getFixturePath("plain"));
+        expectedJson = Files.readString(getFixturePath("json"));
     }
 
     private static Path getFixturePath(String fileName) {
@@ -66,5 +68,26 @@ public class DifferTest {
         );
 
         assertThat(actual).isEqualTo(expectedPlain);
+    }
+
+    @Test
+    void testYamlJson() throws  Exception {
+        var actual = Differ.generate(
+                basePath + "file1.yml",
+                basePath + "file2.yml",
+                "json"
+        );
+
+        assertThat(actual).isEqualTo(expectedJson);
+    }
+
+    @Test
+    void testJsonJson() throws Exception {
+        var actual = Differ.generate(
+                basePath + "file1.json",
+                basePath + "file2.json",
+                "json"
+        );
+        assertThat(actual).isEqualTo(expectedJson);
     }
 }
