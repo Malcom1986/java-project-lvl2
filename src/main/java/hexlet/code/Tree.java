@@ -32,7 +32,6 @@ public class Tree {
             } else {
                 node.put("type", "unchanged");
                 node.put("value", value1);
-                node.put("value", value1);
             }
 
             return node;
