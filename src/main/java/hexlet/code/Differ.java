@@ -16,6 +16,10 @@ public class Differ {
         return Formatter.format(diff, format);
     }
 
+    public  static String generate(String filepath1, String filepath2) throws Exception {
+        return generate(filepath1, filepath2, "stylish");
+    }
+
     private static Map<String, Object> getFileData(String filepath) throws Exception {
         var absolutePath = Paths.get(filepath).toAbsolutePath().normalize();
         var content = Files.readString(absolutePath);

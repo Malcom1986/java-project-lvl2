@@ -90,4 +90,23 @@ public class DifferTest {
         );
         assertThat(actual).isEqualTo(expectedJson);
     }
+
+    @Test
+    void testJsonDefaultFormat() throws Exception {
+        var actual = Differ.generate(
+                basePath + "file1.json",
+                basePath + "file2.json"
+        );
+        assertThat(actual).isEqualTo(expectedStylish);
+    }
+
+    @Test
+    void testYamlDefaultFormat() throws  Exception {
+        var actual = Differ.generate(
+                basePath + "file1.yml",
+                basePath + "file2.yml"
+        );
+
+        assertThat(actual).isEqualTo(expectedStylish);
+    }
 }
