@@ -1,5 +1,2 @@
-run-dist:
-	./build/install/app/bin/app
-
 report:
-	./gradlew jacocoTestReport
+	make -C app report
