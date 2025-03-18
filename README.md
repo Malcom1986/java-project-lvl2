@@ -1,16 +1,19 @@
 # Вычислитель отличий
 
 ### Hexlet tests and linter status:
+
 [![Actions Status](https://github.com/Malcom1986/java-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Malcom1986/java-project-lvl2/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9f94037f2f0fd09dea34/maintainability)](https://codeclimate.com/github/Malcom1986/java-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9f94037f2f0fd09dea34/test_coverage)](https://codeclimate.com/github/Malcom1986/java-project-lvl2/test_coverage)
 
---- qlty
+--- codacy
 
-[![Maintainability](https://qlty.sh/badges/b5a89fae-c716-4bb6-b9fc-c38a80afec6b/maintainability.png)](https://qlty.sh/gh/Malcom1986/projects/java-project-lvl2)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6a6785991941486c9b072b0fad530352)](https://app.codacy.com/gh/Malcom1986/java-project-lvl2/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/6a6785991941486c9b072b0fad530352)](https://app.codacy.com/gh/Malcom1986/java-project-lvl2/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 
-[![Code Coverage](https://qlty.sh/badges/b5a89fae-c716-4bb6-b9fc-c38a80afec6b/test_coverage.png)](https://qlty.sh/gh/Malcom1986/projects/java-project-lvl2)
 ---
+
+
 
 Вычислитель отличий – программа, определяющая разницу между двумя структурами данных
 
