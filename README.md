@@ -5,6 +5,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9f94037f2f0fd09dea34/maintainability)](https://codeclimate.com/github/Malcom1986/java-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9f94037f2f0fd09dea34/test_coverage)](https://codeclimate.com/github/Malcom1986/java-project-lvl2/test_coverage)
 
+--- qlty
+
+[![Maintainability](https://qlty.sh/badges/0c5dc4dd-2119-48e0-8657-07231a3022b2/maintainability.svg)](https://qlty.sh/gh/Malcom1986/projects/java-project-lvl2)
+
+---
+
 Вычислитель отличий – программа, определяющая разницу между двумя структурами данных
 
 Возможности утилиты:
