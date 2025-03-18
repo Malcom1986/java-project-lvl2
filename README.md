@@ -8,6 +8,7 @@
 --- qlty
 
 [![Maintainability](https://qlty.sh/badges/0c5dc4dd-2119-48e0-8657-07231a3022b2/maintainability.svg)](https://qlty.sh/gh/Malcom1986/projects/java-project-lvl2)
+[![Code Coverage](https://qlty.sh/badges/b5a89fae-c716-4bb6-b9fc-c38a80afec6b/test_coverage.png)](https://qlty.sh/gh/Malcom1986/projects/java-project-lvl2)
 
 ---
 
