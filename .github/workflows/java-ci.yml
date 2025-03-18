@@ -23,5 +23,5 @@ jobs:
       - run: make report
       - uses: qltysh/qlty-action/coverage@main
         with:
-          coverage-token: {{secrets.QLTY_COVERAGE_TOKEN}}
+          coverage-token: ${{secrets.QLTY_COVERAGE_TOKEN}}
           files: app/build/reports/jacoco/jacocoTestReport.xml
