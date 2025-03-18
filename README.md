@@ -2,6 +2,7 @@
 
 ### Hexlet tests and linter status:
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9db5ab12f13497ab3f88e39443b6169)](https://app.codacy.com/gh/Malcom1986/java-project-lvl2?utm_source=github.com&utm_medium=referral&utm_content=Malcom1986/java-project-lvl2&utm_campaign=Badge_Grade)
 [![Actions Status](https://github.com/Malcom1986/java-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Malcom1986/java-project-lvl2/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9f94037f2f0fd09dea34/maintainability)](https://codeclimate.com/github/Malcom1986/java-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9f94037f2f0fd09dea34/test_coverage)](https://codeclimate.com/github/Malcom1986/java-project-lvl2/test_coverage)
