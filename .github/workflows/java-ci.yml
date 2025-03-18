@@ -20,14 +20,10 @@ jobs:
         with:
           arguments: build
           build-root-directory: app
-      - run: make report
-      - uses: qltysh/qlty-action/coverage@main
-        with:
-          coverage-token: ${{secrets.QLTY_COVERAGE_TOKEN}}
-          files: app/build/reports/jacoco/test/jacocoTestReport.xml
-          name: codacy-coverage-reporter
+      - name: Generate coverage report
+        run: make report
 
-      - name: Run codacy-coverage-reporter
+      - name: Publsish coverage report to codacy
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
