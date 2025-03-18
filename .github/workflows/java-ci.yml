@@ -21,8 +21,7 @@ jobs:
           arguments: build
           build-root-directory: app
       - run: make report
-      - name: Run Coverage Analysis
-        uses: qltysh/qlty-action/coverage@main
+      - uses: qltysh/qlty-action/coverage@main
         with:
-          coverage-token: ${{ secrets.COVERAGE_TOKEN }}
-          files: app/build/reports/jacoco/test/jacocoTestReport.xml
+          coverage-token: {{secrets.QLTY_COVERAGE_TOKEN}}
+          files: app/build/reports/jacoco/jacocoTestReport.xml
