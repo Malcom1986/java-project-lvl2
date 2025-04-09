@@ -37,6 +37,3 @@ Property 'group2' was removed
 + setting4: blah blah
   }
 ```
-
-
-
